@@ -1,7 +1,7 @@
 # Fullstack Java Project
 
-## Firstname Lastname (Class)
-Change the name and Class in the title above
+## Efe Dogru (3AONA)
+
 
 ## Folder structure
 
