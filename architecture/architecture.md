@@ -42,9 +42,21 @@ De Event Bus zorgt voor de berichtenuitwisseling tussen microservices, zodat dez
 
 OpenFeign maakt synchrone communicatie mogelijk tussen microservices. Dit zorgt voor directe communicatie waarbij de ene service gegevens van de andere kan ophalen wanneer dat nodig is, zonder onnodige duplicatie van logica, en draagt zo bij aan een modulaire architectuur.
 
+**Synchronous Communication**
+
+- **Fetching Reviews (US1, US4)**: Wanneer een bericht samen met de bijbehorende reviews wordt opgehaald, roept de PostService de ReviewService synchroon aan om reviews op te halen op basis van het post-ID.
+- **Fetching Comments (US4, US10, US11)**: Om een bericht met de bijbehorende reacties op te halen, maakt de PostService een synchrone aanvraag naar de CommentService.
+- **Post Approval Status (US7, US8, US9)**: Wanneer een bericht wordt goedgekeurd of afgewezen via de ReviewService, wordt de status direct bijgewerkt in de PostService.
+- **Review Eligibility Check (US2, US7)**: Voordat een bericht wordt beoordeeld, controleert de ReviewService of het bericht zich in de status "ingediend" bevindt door de PostService aan te roepen.
+
 ## Message Bus
 
 De Message Bus maakt asynchrone communicatie mogelijk tussen microservices. Dit zorgt ervoor dat microservices elkaar niet blokkeren en flexibel blijven.
+
+**Asynchronous Communication**
+
+- **Post Approval Notification (US7, US8)**: Wanneer een bericht wordt goedgekeurd of afgewezen in de ReviewService, wordt er een bericht verzonden. De PostService luistert naar dit bericht en werkt de status van het bericht asynchroon bij.
+- **Comment Notifications (US10, US11, US12)**: Wanneer er een nieuwe reactie wordt toegevoegd in de CommentService, wordt er een event uitgezonden om andere services asynchroon te informeren, waardoor updates kunnen plaatsvinden zonder de hoofdwerking te blokkeren.
 
 - **PostService**: Verstuurt berichten naar de Event Bus wanneer posts worden aangemaakt, aangepast, goedgekeurd of afgewezen.
 - **ReviewService**: Stuurt meldingen naar de Event Bus wanneer posts worden goedgekeurd of afgewezen.
