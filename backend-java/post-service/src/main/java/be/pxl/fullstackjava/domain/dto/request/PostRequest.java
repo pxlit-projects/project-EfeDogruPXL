@@ -7,8 +7,9 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 @Builder
-public class CreatePostRequest {
+public class PostRequest {
     private String title;
     private String content;
     private String auteur;
+    private boolean isDraft;
 }
