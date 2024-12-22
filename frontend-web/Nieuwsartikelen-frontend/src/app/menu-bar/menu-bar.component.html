@@ -1,0 +1,107 @@
+<nav class="container max-w-3xl mx-auto bg-black text-white border-b border-gray-700 shadow p-2 flex items-center justify-between rounded-lg">
+    <ul class="flex space-x-6">
+      <li>
+        <a 
+            (click)="navigateToPosts()" 
+            class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
+            <path d="M2.5 4.5a1 1 0 011-1h13a1 1 0 011 1v11a1 1 0 01-1 1h-13a1 1 0 01-1-1v-11zM3.5 5.5v9h13v-9l-6.5 4.5-6.5-4.5z" />
+          </svg>
+          Posts
+        </a>
+      </li>
+      <li>
+        <a 
+            (click)="navigateToDrafts()" 
+            class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
+            <path d="M2 5a2 2 0 012-2h5.586a1 1 0 01.707.293l2.414 2.414A1 1 0 0013.414 6H16a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" />
+          </svg>
+          Drafts
+        </a>
+      </li>
+      <li>
+        <a 
+            (click)="navigateToRejectedPosts()" 
+            class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2">
+            <path d="M6.225 4.811a1.5 1.5 0 012.122 0L12 8.464l3.653-3.653a1.5 1.5 0 112.122 2.122L14.122 12l3.653 3.653a1.5 1.5 0 01-2.122 2.122L12 15.535l-3.653 3.653a1.5 1.5 0 01-2.122-2.122L9.878 12l-3.653-3.653a1.5 1.5 0 010-2.122z" />
+          </svg>
+          Rejected Posts
+        </a>
+      </li>
+    </ul>
+  
+    <div class="flex items-center space-x-4">
+      <a 
+          (click)="navigateToCreatePost()" 
+          class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
+          <path d="M10 4a1 1 0 011 1v4h4a1 1 0 110 2h-4v4a1 1 0 11-2 0v-4H5a1 1 0 110-2h4V5a1 1 0 011-1z" />
+        </svg>
+        Create Post
+      </a>
+  
+      <div class="h-6 w-px bg-gray-200"></div> <!-- Vertical line -->
+  
+      <div class="relative">
+        <!-- Notification Bell -->
+        <a 
+            (click)="toggleModal()" 
+            class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer relative"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405a2.032 2.032 0 01-.405-1.195V10a7.5 7.5 0 10-15 0v4.4c0 .45-.162.88-.405 1.195L4 17h5m6 0a3 3 0 01-6 0m6 0H9" />
+          </svg>
+          <!-- Optional: Notification Badge -->
+          <!-- <span 
+              @if notificationCount > 0 
+              class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center"
+          >
+            {{ notificationCount }}
+          </span> -->
+        </a>
+  
+        <!-- Modal -->
+        @if (isModalOpen) {
+          <div 
+              class="absolute right-0 mt-2 bg-white rounded-lg shadow-lg w-64 p-4 z-50"
+          >
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Notifications</h3>
+            <div class="max-h-48 overflow-y-auto">
+              @for (notification of notifications; track notification.id) {
+                <div class="p-2 border-b border-gray-200 text-sm text-gray-700">
+                  {{ notification.message }}
+                </div>
+              }
+              @empty {
+                <p class="text-sm text-gray-500">No notifications</p>
+              }
+            </div>
+            <button 
+                (click)="closeModal()" 
+                class="mt-4 bg-gray-800 text-white text-sm px-4 py-2 rounded-lg hover:bg-gray-700 transition"
+            >
+              Close
+            </button>
+          </div>
+        }
+      </div>
+  
+      <!-- Logout Button -->
+      <a 
+        (click)="logout()" 
+        class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1">
+          <path fill-rule="evenodd" d="M3 4.5A1.5 1.5 0 014.5 3h7a1.5 1.5 0 011.5 1.5V7a.75.75 0 001.5 0V4.5A2.5 2.5 0 0011.5 2h-7A2.5 2.5 0 002 4.5v11A2.5 2.5 0 004.5 18h7a2.5 2.5 0 002.5-2.5V13a.75.75 0 10-1.5 0v2.5a1.5 1.5 0 01-1.5 1.5h-7A1.5 1.5 0 013 15.5v-11zm10.354 5.854a.75.75 0 00.146-.354v-.001a.75.75 0 00-.146-.353l-3-3a.75.75 0 10-1.06 1.06L11.793 9H7.5a.75.75 0 000 1.5h4.293l-1.647 1.646a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+        </svg>
+        Logout
+      </a>
+    </div>
+  </nav>
+  

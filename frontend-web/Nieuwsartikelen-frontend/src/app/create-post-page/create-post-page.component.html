@@ -1,0 +1,69 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-200">
+    <div class="container max-w-3xl mx-auto p-6 bg-gray-100 rounded-b-lg shadow-lg h-[calc(75vh-4rem)]">
+      <div class="mb-4">
+        <button 
+          (click)="navigateToPosts()" 
+          class="flex items-center text-gray-700 hover:text-gray-900 font-semibold transition duration-300 ease-in-out"
+        >
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+          Back to Posts
+        </button>
+      </div>
+
+      <div class="mb-6">
+        <h1 class="text-3xl font-bold text-center text-gray-800">Create a New Post</h1>
+      </div>
+  
+      <form (ngSubmit)="onSubmit()" class="space-y-6">
+        <div>
+          <label for="title" class="block text-gray-700 font-semibold mb-2">Title</label>
+          <input
+            type="text"
+            id="title"
+            [(ngModel)]="post.title"
+            name="title"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter the post title"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="content" class="block text-gray-700 font-semibold mb-2">Content</label>
+          <textarea
+            id="content"
+            [(ngModel)]="post.content"
+            name="content"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            rows="5"
+            placeholder="Enter the post content"
+            required
+          ></textarea>
+        </div>
+  
+        <div class="flex items-center">
+          <input
+            type="checkbox"
+            id="isDraft"
+            [(ngModel)]="post.isDraft"
+            name="isDraft"
+            class="mr-2"
+          />
+          <label for="isDraft" class="text-gray-700 font-semibold">Save as Draft</label>
+        </div>
+  
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="bg-black text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-slate-800 transition duration-300 ease-in-out"
+          >
+            Submit Post
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

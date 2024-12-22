@@ -1,5 +1,6 @@
 package be.pxl.fullstackjava.domain.dto.response;
 
+import be.pxl.fullstackjava.domain.ReviewStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,9 +9,11 @@ import lombok.Data;
 @Data
 @Builder
 public class PostResponse {
+    private Long id;
     private String title;
     private String content;
-    private String auteur;
+    private String author;
     private boolean isDraft;
     private String createdAt;
+    private ReviewStatus status;
 }

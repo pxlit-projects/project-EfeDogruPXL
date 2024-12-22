@@ -1,0 +1,72 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-200">
+    <div class="container max-w-3xl mx-auto p-6 bg-gray-100 rounded-b-lg shadow-lg h-[calc(100vh-4rem)]">
+      <app-menu-bar></app-menu-bar>
+      
+      <div class="mb-4 mt-6">
+        <h1 class="text-3xl font-bold text-gray-800 text-center">Rejected Posts</h1>
+      </div>
+  
+      <hr class="mb-4" >
+  
+      @if(!posts.length){
+        <div class="text-center">
+          <p class="text-gray-600 text-lg">No posts rejected yet!</p>
+        </div>
+      }
+  
+      <ul class="space-y-4 overflow-y-scroll h-[calc(100%-10rem)]">
+        @for(post of posts; track post){
+          <li
+          (click)="checkUser(post.author) ? navigateToUpdatePost(post.id) : null"
+          class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200"
+          
+        >
+        <div class="flex justify-between items-start">
+            <!-- Left Section -->
+            <div>
+              <h2 class="text-xl font-semibold text-black mb-2">
+                {{ post.title }}
+              </h2>
+              <p class="text-gray-700">
+                {{ post.content }}
+              </p>
+              <p class="text-sm text-gray-500 italic">
+                Author: {{ post.author }}
+              </p>
+              <p class="text-sm font-bold">
+                Status:
+                <span
+                  [ngClass]="{
+                    'text-red-500': post.status === 'REJECTED'
+                  }"
+                >
+                  {{ post.status }}
+                </span>
+              </p>
+            </div>
+
+            <!-- Right Section -->
+            <div class="max-w-[300px] overflow-y-auto border border-gray-300 rounded-lg p-2">
+              <p class="text-sm font-bold mb-1">
+                Message:
+              </p>
+              <p class="text-gray-700 break-words">
+                {{ post.reviewContent }}
+              </p>
+              <p class="text-sm font-bold mb-1 mt-4">
+                Writer:
+              </p>
+              <p class="text-gray-700 break-words">
+                {{ post.reviewAuthor}}
+              </p>              
+            </div>
+          </div>
+        </li>
+        }
+        
+      </ul>
+      
+    
+    </div>
+  </div>
+  

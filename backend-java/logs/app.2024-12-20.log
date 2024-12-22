@@ -1,0 +1,5 @@
+2024-12-20T14:49:36.307+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - Starting CommentServiceApplication using Java 21.0.1 with PID 54677 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2024-12-20T14:49:36.310+0100 DEBUG              [main]                         be.pxl.fullstackjava.CommentServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-20T14:49:36.310+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-20T14:49:38.116+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - Started CommentServiceApplication in 2.177 seconds (process running for 2.527)
+2024-12-20T14:50:24.249+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1

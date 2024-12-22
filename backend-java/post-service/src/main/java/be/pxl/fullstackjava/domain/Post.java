@@ -2,13 +2,11 @@ package be.pxl.fullstackjava.domain;
 
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.Dictionary;
 import java.util.List;
 
 @Entity
@@ -23,7 +21,11 @@ public class Post {
     private Long id;
     private String title;
     private String content;
-    private String auteur;
+    private String author;
     private LocalDateTime createdAt;
     private boolean isDraft;
+
+    @Enumerated(EnumType.STRING)
+    private ReviewStatus status;
+
 }

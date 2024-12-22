@@ -9,16 +9,24 @@
         <outputRelativeToContentRoot value="true" />
         <module name="post-service" />
         <module name="comment-service" />
+        <module name="config-service" />
         <module name="review-service" />
+        <module name="gateway-service" />
         <module name="discovery-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="notification-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="comment-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="java" options="" />
+      <module name="notification-service" options="-parameters" />
       <module name="post-service" options="-parameters" />
       <module name="review-service" options="-parameters" />
     </option>

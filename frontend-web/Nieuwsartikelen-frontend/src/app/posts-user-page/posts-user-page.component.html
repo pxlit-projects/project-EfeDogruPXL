@@ -1,0 +1,101 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-200">
+    <div class="container max-w-3xl mx-auto p-6 bg-gray-100 rounded-b-lg shadow-lg h-[calc(100vh-4rem)]">
+        <nav class="container max-w-3xl mx-auto bg-black text-white border-b border-gray-700 shadow p-2 flex items-center justify-between rounded-lg">
+            <div class="flex items-center ml-auto">
+              <a 
+                (click)="logout()" 
+                class="flex items-center text-white hover:text-gray-300 transition duration-300 ease-in-out cursor-pointer mr-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1">
+                  <path fill-rule="evenodd" d="M3 4.5A1.5 1.5 0 014.5 3h7a1.5 1.5 0 011.5 1.5V7a.75.75 0 001.5 0V4.5A2.5 2.5 0 0011.5 2h-7A2.5 2.5 0 002 4.5v11A2.5 2.5 0 004.5 18h7a2.5 2.5 0 002.5-2.5V13a.75.75 0 10-1.5 0v2.5a1.5 1.5 0 01-1.5 1.5h-7A1.5 1.5 0 013 15.5v-11zm10.354 5.854a.75.75 0 00.146-.354v-.001a.75.75 0 00-.146-.353l-3-3a.75.75 0 10-1.06 1.06L11.793 9H7.5a.75.75 0 000 1.5h4.293l-1.647 1.646a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd" />
+                </svg>
+                Logout
+              </a>
+            </div>
+          </nav>
+          
+      
+      <div class="mb-4 mt-6">
+        <h1 class="text-3xl font-bold text-gray-800 text-center">Posts</h1>
+      </div>
+  
+      <!-- Filter Inputs -->
+      <div class="mb-2 grid gap-4 grid-cols-1 sm:grid-cols-3">
+        <div>
+          <label for="author" class="block text-gray-700 font-semibold mb-2">Author</label>
+          <input
+            type="text"
+            id="author"
+            [(ngModel)]="filters.author"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Author name"
+          />
+        </div>
+  
+        <div>
+          <label for="content" class="block text-gray-700 font-semibold mb-2">Content</label>
+          <input
+            type="text"
+            id="content"
+            [(ngModel)]="filters.content"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Keyword"
+          />
+        </div>
+  
+        <div>
+          <label for="datetime" class="block text-gray-700 font-semibold mb-2">Date</label>
+          <input
+            type="date"
+            id="datetime"
+            [(ngModel)]="filters.datetime"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+  
+      <div class="mb-4 ml-2">
+        <a 
+          href="javascript:void(0)" 
+          class="text-black hover:underline"
+          (click)="clearFilters()"
+        >
+          Clear Filters
+        </a>
+      </div>
+  
+      <hr class="mb-4" >
+  
+      @if(!filteredPosts.length){
+        <div class="text-center">
+          <p class="text-gray-600 text-lg">No posts match your filters. Please try again!</p>
+        </div>
+      }
+  
+      <ul class="space-y-4 overflow-y-scroll h-[calc(95%-15rem)]">
+        @for(post of filteredPosts; track post){
+          <li
+          (click)="navigateToComments(post.id)"
+          class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200"
+        >
+          <h2 class="text-xl font-semibold text-black mb-2">
+            {{ post.title }}
+          </h2>
+    
+          <p class="text-gray-700">
+            {{ post.content }}
+          </p>
+  
+          <p class="text-sm text-gray-500 italic">
+            Author: {{ post.author }}
+          </p>
+          
+        </li>
+        }
+        
+      </ul>
+      
+    </div>
+    
+  </div>
+  
