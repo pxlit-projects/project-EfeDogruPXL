@@ -4,19 +4,24 @@ server:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       globalcors:
         corsConfigurations:
           '[/**]':
             allowedOrigins:
-              - "localhost"
+              - "http://localhost:4200"
             allowedMethods:
-              - "*"
+              - GET
+              - POST
+              - PUT
+              - DELETE
             allowedHeaders:
               - "*"
+            exposedHeaders:
+              - "*"
             allowCredentials: true
-      discovery:
-        locator:
-          enabled: true
       routes:
         - id: post-service
           uri: lb://post-service
@@ -30,6 +35,12 @@ spring:
             - Path=/review/**
           filters:
             - RewritePath=/review/(?<path>.*), /$\{path}
+        - id: comment-service
+          uri: lb://comment-service
+          predicates:
+            - Path=/comment/**
+          filters:
+            - RewritePath=/comment/(?<path>.*), /$\{path}
 
 eureka:
   client:

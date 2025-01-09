@@ -9,8 +9,6 @@ import be.pxl.fullstackjava.domain.dto.response.ReviewResponse;
 import be.pxl.fullstackjava.repository.ReviewRepository;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;

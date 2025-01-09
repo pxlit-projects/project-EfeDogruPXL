@@ -1,5 +1,7 @@
 package be.pxl.fullstackjava.service;
 
+import be.pxl.fullstackjava.domain.Notification;
+import be.pxl.fullstackjava.domain.dto.request.NotificationRequest;
 import be.pxl.fullstackjava.domain.dto.request.PostRequest;
 import be.pxl.fullstackjava.domain.dto.response.PostResponse;
 import be.pxl.fullstackjava.domain.dto.response.ReviewEvent;
@@ -11,8 +13,6 @@ public interface IPostService {
 
     void updatePost(Long id, PostRequest updatePostRequest);
 
-    List<PostResponse> getAllPosts();
-
     List<PostResponse> getApprovedAndPendingPosts();
 
     List<PostResponse> getRejectedPosts();
@@ -22,6 +22,16 @@ public interface IPostService {
     PostResponse getPostById(Long id);
 
     List<PostResponse> getAllDraftedPosts();
+
+    String getPostStatus(Long postId);
+
+    String getPostAuthor(Long postId);
+
+    void saveNotification(NotificationRequest notificationRequest);
+
+    List<Notification> getNotificationsByAuthor(String author);
+
+
 
     void receiveReview(ReviewEvent reviewEvent);
 }

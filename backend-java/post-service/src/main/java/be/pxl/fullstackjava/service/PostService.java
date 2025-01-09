@@ -17,6 +17,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -58,14 +59,6 @@ public class PostService implements IPostService{
         post.setStatus(ReviewStatus.PENDING);
         postRepository.save(post);
         log.info("Post with ID={} updated successfully", id);
-    }
-
-    public List<PostResponse> getAllPosts() {
-        log.info("Fetching all non-draft posts");
-        List<Post> posts = postRepository.findByIsDraftFalse();
-        return posts.stream()
-                .map(this::mapToResponse)
-                .toList();
     }
 
     public List<PostResponse> getApprovedAndPendingPosts() {
@@ -144,6 +137,7 @@ public class PostService implements IPostService{
         Notification notification = Notification.builder()
                 .author(notificationRequest.getAuthor())
                 .message(notificationRequest.getMessage())
+                .createdAt(LocalDateTime.now())
                 .build();
 
         notificationRepository.save(notification);

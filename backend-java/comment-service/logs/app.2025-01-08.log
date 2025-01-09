@@ -1,0 +1,14 @@
+2025-01-08T08:38:18.380+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 13622 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
+2025-01-08T08:38:18.383+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-08T08:38:18.383+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-08T08:38:21.333+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.585 seconds (process running for 16.015)
+2025-01-08T08:38:21.501+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-08T08:38:21.530+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-08T08:38:21.651+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-08T08:38:21.713+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
+2025-01-08T08:38:21.975+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=4
+2025-01-08T08:38:21.989+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=4 updated successfully
+2025-01-08T08:38:22.008+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
+2025-01-08T08:38:22.014+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-08T08:38:22.040+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=6
+2025-01-08T08:38:22.045+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=6, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-08T08:38:22.033260)

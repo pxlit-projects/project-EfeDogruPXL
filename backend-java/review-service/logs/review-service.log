@@ -1,0 +1,161 @@
+2025-01-09T19:39:54.454+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Starting ReviewTests using Java 21.0.1 with PID 13954 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service)
+2025-01-09T19:39:54.458+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-09T19:39:54.458+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T19:39:58.675+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Started ReviewTests in 4.861 seconds (process running for 16.647)
+2025-01-09T19:39:58.910+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:39:58.953+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Great post!, author=Jane Doe, postId=1, createdAt=2025-01-09T19:39:58.845630, isApproved=true)
+2025-01-09T19:39:58.993+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:39:58.995+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:39:59.008+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:39:59.027+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:39:59.027+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:39:59.027+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:39:59.027+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:39:59.050+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:39:59.050+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:39:59.064+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:39:59.085+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:39:59.334+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:39:59.343+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:39:59.356+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:39:59.356+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:39:59.364+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:39:59.367+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:39:59.470+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:39:59.472+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - Review already exists for postId=1
+2025-01-09T19:39:59.473+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:39:59.482+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:39:59.486+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:39:59.487+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:39:59.487+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:39:59.487+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:39:59.503+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:39:59.509+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:39:59.511+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:47:47.683+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Starting ReviewTests using Java 21.0.1 with PID 21686 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service)
+2025-01-09T19:47:47.683+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-09T19:47:47.684+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T19:47:51.796+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Started ReviewTests in 4.777 seconds (process running for 16.528)
+2025-01-09T19:47:51.991+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:47:52.041+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Great post!, author=Jane Doe, postId=1, createdAt=2025-01-09T19:47:51.939766, isApproved=true)
+2025-01-09T19:47:52.078+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:47:52.080+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:47:52.103+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:47:52.118+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:47:52.118+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:47:52.119+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:47:52.119+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:47:52.141+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:47:52.141+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:47:52.152+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:47:52.169+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:47:52.423+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:47:52.433+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:47:52.449+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:47:52.449+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:47:52.457+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:47:52.460+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:47:52.557+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:47:52.560+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - Review already exists for postId=1
+2025-01-09T19:47:52.560+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:47:52.570+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:47:52.575+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:47:52.576+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:47:52.576+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:47:52.576+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:47:52.592+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:47:52.600+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:47:52.603+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:50:55.441+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Starting ReviewTests using Java 21.0.1 with PID 24765 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service)
+2025-01-09T19:50:55.441+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-09T19:50:55.442+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T19:50:59.894+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Started ReviewTests in 5.233 seconds (process running for 16.714)
+2025-01-09T19:51:00.155+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:51:00.204+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Great post!, author=Jane Doe, postId=1, createdAt=2025-01-09T19:51:00.067998, isApproved=true)
+2025-01-09T19:51:00.247+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:51:00.249+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:51:00.260+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:51:00.270+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:51:00.270+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:51:00.270+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:51:00.271+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:51:00.329+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:51:00.348+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:51:00.348+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:51:00.413+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:51:00.437+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:51:00.705+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:51:00.717+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:51:00.730+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:51:00.730+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:51:00.738+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:51:00.741+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:51:00.762+0100 INFO               [main]                         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=1, returning response
+2025-01-09T19:51:00.762+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:51:00.766+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=5, content=Great post!, author=Jane Doe, postId=1, createdAt=2025-01-09T19:51:00.756584, isApproved=true)
+2025-01-09T19:51:00.782+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:51:00.790+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:51:00.790+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:51:00.790+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:51:00.790+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:51:00.790+0100 INFO               [main]                         be.pxl.fullstackjava.controller.ReviewController - Review created by user=TestUser, role=editor for postId=1
+2025-01-09T19:51:00.813+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:51:00.816+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - Review already exists for postId=1
+2025-01-09T19:51:00.816+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:51:00.825+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:51:00.829+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:51:00.829+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:51:00.829+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:51:00.830+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:51:00.845+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:51:00.851+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:51:00.854+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:52:42.974+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Starting ReviewTests using Java 21.0.1 with PID 26590 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service)
+2025-01-09T19:52:42.980+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-09T19:52:42.981+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T19:52:48.195+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewTests - Started ReviewTests in 5.978 seconds (process running for 16.486)
+2025-01-09T19:52:48.427+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:52:48.484+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Great post!, author=Jane Doe, postId=1, createdAt=2025-01-09T19:52:48.366277, isApproved=true)
+2025-01-09T19:52:48.536+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:48.538+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:52:48.554+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:52:48.581+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:52:48.581+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:52:48.581+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:48.581+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:52:48.662+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:52:48.670+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:52:48.671+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:52:48.671+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:48.671+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:52:48.671+0100 INFO               [main]                         be.pxl.fullstackjava.controller.ReviewController - Review created by user=TestEditor, role=editor for postId=1
+2025-01-09T19:52:49.010+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:49.011+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:52:49.073+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:52:49.099+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:52:49.123+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:52:49.135+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:52:49.148+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:49.148+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'John Doe' for postId=1
+2025-01-09T19:52:49.158+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:52:49.161+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
+2025-01-09T19:52:49.184+0100 INFO               [main]                         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=1, returning response
+2025-01-09T19:52:49.184+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:52:49.188+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=6, content=Great post!, author=Jane Doe, postId=1, createdAt=2025-01-09T19:52:49.177782, isApproved=true)
+2025-01-09T19:52:49.207+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:52:49.213+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:52:49.213+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:52:49.213+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:49.214+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:52:49.214+0100 INFO               [main]                         be.pxl.fullstackjava.controller.ReviewController - Review created by user=TestUser, role=editor for postId=1
+2025-01-09T19:52:49.233+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:52:49.236+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - Review already exists for postId=1
+2025-01-09T19:52:49.236+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-09T19:52:49.242+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-09T19:52:49.245+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-09T19:52:49.246+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-09T19:52:49.246+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-09T19:52:49.246+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'null' for postId=1
+2025-01-09T19:52:49.263+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Jane Doe
+2025-01-09T19:52:49.271+0100 INFO               [main]                         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-09T19:52:49.273+0100 WARN               [main]                         be.pxl.fullstackjava.service.ReviewService - No review found for postId=1
