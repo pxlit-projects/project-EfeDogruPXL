@@ -59,7 +59,7 @@ export class PostsComponent {
     this.reviewService.makeReview(postId, reviewRequest).subscribe({
       next: () => {
         console.log(`Post ${postId} approved.`);
-        window.location.reload();
+        this.getAllPosts();
       },
       error: (error) => {
         console.error('Error approving post:', error);
@@ -84,7 +84,7 @@ export class PostsComponent {
   
     this.reviewService.makeReview(postId, reviewRequest).subscribe(() => {
       console.log(`Post ${postId} rejected.`);
-      window.location.reload();
+      this.getAllPosts();
     });
   }
 

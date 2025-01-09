@@ -44,7 +44,11 @@ export class CommentsPageComponent {
       }
     });
     
+    this.getComments(postId);
 
+  }
+
+  getComments(postId : number): void {
     this.commentService.getCommentsByPostId(postId).subscribe({
       next: (comments) => {
         this.comments = comments.map((comment) => ({
@@ -58,7 +62,6 @@ export class CommentsPageComponent {
         console.error('Error loading comments:', err);
       },
     });
-
   }
 
   addComment(): void {
@@ -71,7 +74,8 @@ export class CommentsPageComponent {
     this.commentService.createComment(postId, commentRequest).subscribe({
       next: () => {
         console.log('Comment added successfully!');
-        window.location.reload();
+        this.commentText = '';
+        this.getComments(postId);
       },
       error: (err) => {
         console.error('Error adding comment:', err);
@@ -85,7 +89,6 @@ export class CommentsPageComponent {
     this.commentService.updateComment(commentId, commentText).subscribe({
       next: () => {
         console.log('Comment updated successfully!');
-        window.location.reload();
       },
       error: (err) => {
         console.error('Error updating comment:', err);
@@ -98,8 +101,8 @@ export class CommentsPageComponent {
     this.commentService.deleteComment(commentId).subscribe({
       next: () => {
         console.log('Comment deleted successfully!');
-        window.location.reload();
-      },
+          this.getComments(this.route.snapshot.params['postId']);    
+        },
       error: (err) => {
         console.error('Error deleting comment:', err);
         alert('Failed to delete comment. Please try again.');
