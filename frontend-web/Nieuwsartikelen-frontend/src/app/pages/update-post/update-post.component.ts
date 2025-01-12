@@ -44,6 +44,12 @@ export class UpdatePostComponent {
   
 
   onSubmit(): void {
+
+    if (!this.post.title || !this.post.content) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
     this.postService.updatePost(this.postResponse.id, this.post).subscribe({
       next: () => {
         alert('Post updated successfully!');

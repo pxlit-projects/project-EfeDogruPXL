@@ -30,6 +30,12 @@ router: Router = inject(Router);
   }
 
   onSubmit(): void {
+
+    if (!this.post.title || !this.post.content) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+
     this.postService.createPost(this.post).subscribe({
       next: () => {
         alert('Post created successfully!');

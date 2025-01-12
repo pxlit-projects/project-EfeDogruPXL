@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { PostResponse, PostRequest } from '../models/post.model';
 import { Notification } from '../models/notification.model';
 import { environment } from '../../environments/environment.development';
@@ -25,20 +25,27 @@ export class PostService {
     }
 
 
-  getApprovedAndPendingPosts(): Observable<PostResponse[]> {
-    const headers = this.createHeaders();
-    return this.http.get<PostResponse[]>(`${this.baseUrl}/all/approved-pending`, { headers });
-  }
-
-  getRejectedPosts(): Observable<PostResponse[]> {
-    const headers = this.createHeaders();
-    return this.http.get<PostResponse[]>(`${this.baseUrl}/all/rejected`, { headers });
-  }
-
-  getApprovedPosts(): Observable<PostResponse[]> {
-    const headers = this.createHeaders();
-    return this.http.get<PostResponse[]>(`${this.baseUrl}/all/approved`, { headers });
-  }
+    getApprovedAndPendingPosts(): Observable<PostResponse[]> {
+      const headers = this.createHeaders();
+      return this.http.get<PostResponse[]>(`${this.baseUrl}/all/approved-pending`, { headers }).pipe(
+        map(this.sortByCreatedAt)
+      );
+    }
+    
+    getRejectedPosts(): Observable<PostResponse[]> {
+      const headers = this.createHeaders();
+      return this.http.get<PostResponse[]>(`${this.baseUrl}/all/rejected`, { headers }).pipe(
+        map(this.sortByCreatedAt)
+      );
+    }
+    
+    getApprovedPosts(): Observable<PostResponse[]> {
+      const headers = this.createHeaders();
+      return this.http.get<PostResponse[]>(`${this.baseUrl}/all/approved`, { headers }).pipe(
+        map(this.sortByCreatedAt)
+      );
+    }
+    
 
   getPostById(id: number): Observable<PostResponse> {
     const headers = this.createHeaders();
@@ -64,4 +71,9 @@ export class PostService {
     const headers = this.createHeaders();
     return this.http.get<Notification[]>(`${this.baseUrl}/${author}/notification`, { headers });
   }
+
+  private sortByCreatedAt(posts: PostResponse[]): PostResponse[] {
+    return posts.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+  }
+  
 }
