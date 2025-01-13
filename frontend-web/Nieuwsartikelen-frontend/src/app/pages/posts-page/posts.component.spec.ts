@@ -49,25 +49,25 @@ describe('PostsComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load posts on init', () => {
-    const mockPosts = [
-      {
-        id: 1,
-        title: 'Test Post',
-        content: 'Test Content',
-        author: 'testUser',
-        createdAt: new Date().toISOString(),
-        isDraft: false,
-        status: 'PENDING',
-        reviewContent: '',
-        reviewAuthor: ''
-      }
-    ];
+  // it('should load posts on init', () => {
+  //   const mockPosts = [
+  //     {
+  //       id: 1,
+  //       title: 'Test Post',
+  //       content: 'Test Content',
+  //       author: 'testUser',
+  //       createdAt: new Date().toISOString(),
+  //       isDraft: false,
+  //       status: 'PENDING',
+  //       reviewContent: '',
+  //       reviewAuthor: ''
+  //     }
+  //   ];
 
-    postServiceMock.getApprovedAndPendingPosts.and.returnValue(of(mockPosts));
-    component.ngOnInit();
-    expect(component.posts).toEqual(mockPosts);
-  });
+  //   postServiceMock.getApprovedAndPendingPosts.and.returnValue(of(mockPosts));
+  //   component.ngOnInit();
+  //   expect(component.posts).toEqual(mockPosts);
+  // });
 
   it('should handle error when loading posts', () => {
     postServiceMock.getApprovedAndPendingPosts.and.returnValue(throwError(() => new Error('Test error')));

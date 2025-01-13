@@ -62,21 +62,21 @@
             
               <button
                 class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-                (click)="showRejectTextBox(); $event.stopPropagation()"
+                (click)="toggleRejectTextBox(post); $event.stopPropagation()"
               >
                 ✗
               </button>
             </div>
             
-            @if(showTextBox) {
+            @if(post.showRejectTextBox) {
               <textarea
                 class="w-full mt-4 h-32 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Provide a reason for rejection"
-                [(ngModel)]="rejectionReason"
+                [(ngModel)]="post.rejectionReason"
                 (click)="$event.stopPropagation()"
               ></textarea>
               <button
-                (click)="rejectPost(post.id); $event.stopPropagation()"
+                (click)="rejectPost(post); $event.stopPropagation()"
                 class="bg-black mt-2 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-slate-800 transition duration-300 ease-in-out"
               >
                 Submit

@@ -35,7 +35,11 @@ export class PostsComponent {
     this.postService.getApprovedAndPendingPosts().subscribe({
       next: (posts) => {
         console.log(posts);
-        this.posts = posts;
+        this.posts = posts.map(post => ({
+          ...post,
+          showRejectTextBox: false,  
+          rejectionReason: ''
+        }));
       },
       error: (error) => {
         this.error = 'Failed to load posts.'; 
@@ -69,21 +73,21 @@ export class PostsComponent {
     
   }
 
-  showRejectTextBox(): void {
-    this.showTextBox = !this.showTextBox;
+  toggleRejectTextBox(post: PostResponse): void {
+    post.showRejectTextBox = !post.showRejectTextBox;
   }
   
-  rejectPost(postId: number): void {
+  rejectPost(post: PostResponse): void {
     const storedName = localStorage.getItem('name');
   
     const reviewRequest = {
-      content: this.rejectionReason,
+      content: post.rejectionReason || '',
       author: storedName ? storedName : 'Anonymous',
       isApproved: false
     };
   
-    this.reviewService.makeReview(postId, reviewRequest).subscribe(() => {
-      console.log(`Post ${postId} rejected.`);
+    this.reviewService.makeReview(post.id, reviewRequest).subscribe(() => {
+      console.log(`Post ${post.id} rejected.`);
       this.getAllPosts();
     });
   }

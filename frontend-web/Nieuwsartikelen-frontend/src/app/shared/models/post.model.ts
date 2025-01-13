@@ -16,6 +16,9 @@ export interface PostResponse {
     reviewContent: string;
     reviewAuthor: string;
     status: string;
+
+    showRejectTextBox?: boolean;
+    rejectionReason?: string; 
   }
   
   export interface PostRequest {

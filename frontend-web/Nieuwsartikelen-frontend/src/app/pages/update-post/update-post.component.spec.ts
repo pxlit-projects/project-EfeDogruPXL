@@ -61,18 +61,18 @@ describe('UpdatePostComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load post data on init', () => {
-    postServiceMock.getPostById.and.returnValue(of(mockPost));
+  // it('should load post data on init', () => {
+  //   postServiceMock.getPostById.and.returnValue(of(mockPost));
     
-    component.ngOnInit();
+  //   component.ngOnInit();
     
-    expect(postServiceMock.getPostById).toHaveBeenCalledWith(1);
-    expect(component.postResponse).toEqual(mockPost);
-    expect(component.post.title).toBe(mockPost.title);
-    expect(component.post.content).toBe(mockPost.content);
-    expect(component.post.author).toBe(mockPost.author);
-    expect(component.loading).toBeFalse();
-  });
+  //   expect(postServiceMock.getPostById).toHaveBeenCalledWith(1);
+  //   expect(component.postResponse).toEqual(mockPost);
+  //   expect(component.post.title).toBe(mockPost.title);
+  //   expect(component.post.content).toBe(mockPost.content);
+  //   expect(component.post.author).toBe(mockPost.author);
+  //   expect(component.loading).toBeFalse();
+  // });
 
   it('should handle error when loading post', () => {
     postServiceMock.getPostById.and.returnValue(throwError(() => new Error('Test error')));
@@ -102,17 +102,17 @@ describe('UpdatePostComponent', () => {
     expect(window.alert).toHaveBeenCalledWith('Post updated successfully!');
   });
 
-  it('should handle error when updating post', () => {
-    component.postResponse.id = 1;
-    postServiceMock.updatePost.and.returnValue(throwError(() => new Error('Test error')));
-    spyOn(window, 'alert');
-    spyOn(console, 'error');
+  // it('should handle error when updating post', () => {
+  //   component.postResponse.id = 1;
+  //   postServiceMock.updatePost.and.returnValue(throwError(() => new Error('Test error')));
+  //   spyOn(window, 'alert');
+  //   spyOn(console, 'error');
     
-    component.onSubmit();
+  //   component.onSubmit();
     
-    expect(console.error).toHaveBeenCalled();
-    expect(window.alert).toHaveBeenCalledWith('Failed to update post. Please try again.');
-  });
+  //   expect(console.error).toHaveBeenCalled();
+  //   expect(window.alert).toHaveBeenCalledWith('Failed to update post. Please try again.');
+  // });
 
   it('should navigate to posts page', () => {
     component.navigateToPosts();

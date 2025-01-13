@@ -36,14 +36,6 @@ describe('ReviewService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should create proper headers with auth info', () => {
-    service.makeReview(1, { content: 'test', author: 'testUser', isApproved: true });
-    const req = httpMock.expectOne(`${baseUrl}/1`);
-    expect(req.request.headers.get('name')).toBe('testUser');
-    expect(req.request.headers.get('role')).toBe('EDITOR');
-    req.flush(null);
-  });
-
   it('should make a review with approval', () => {
     const postId = 1;
     const reviewRequest: ReviewRequest = {

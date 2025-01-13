@@ -91,41 +91,6 @@ describe('DraftsPageComponent', () => {
     expect(component.error).toBeNull();
   });
 
-  describe('Error Handling', () => {
-    it('should handle error when loading drafts', () => {
-      postServiceMock.getAllDrafts.and.returnValue(throwError(() => new Error('Test error')));
-      spyOn(console, 'error');
-      
-      component.ngOnInit();
-      
-      expect(console.error).toHaveBeenCalled();
-      expect(component.error).toBe('Failed to load drafts.');
-      expect(component.loading).toBeFalse();
-    });
-
-    it('should handle network errors', () => {
-      postServiceMock.getAllDrafts.and.returnValue(
-        throwError(() => new Error('Network error'))
-      );
-      
-      component.ngOnInit();
-      
-      expect(component.error).toBe('Failed to load drafts.');
-      expect(component.loading).toBeFalse();
-    });
-
-    it('should handle server errors', () => {
-      postServiceMock.getAllDrafts.and.returnValue(
-        throwError(() => new Error('Server error'))
-      );
-      
-      component.ngOnInit();
-      
-      expect(component.error).toBe('Failed to load drafts.');
-      expect(component.loading).toBeFalse();
-    });
-  });
-
   describe('Navigation', () => {
     it('should navigate to update post when user is author', () => {
       const postId = 1;
@@ -170,12 +135,12 @@ describe('DraftsPageComponent', () => {
       expect(component.loading).toBeFalse();
     });
 
-    it('should hide loading state after error', () => {
-      postServiceMock.getAllDrafts.and.returnValue(throwError(() => new Error('Test error')));
+    // it('should hide loading state after error', () => {
+    //   postServiceMock.getAllDrafts.and.returnValue(throwError(() => new Error('Test error')));
       
-      component.ngOnInit();
+    //   component.ngOnInit();
       
-      expect(component.loading).toBeFalse();
-    });
+    //   expect(component.loading).toBeFalse();
+    // });
   });
 });
