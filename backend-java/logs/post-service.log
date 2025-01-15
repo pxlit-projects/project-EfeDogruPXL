@@ -1,140 +1,72 @@
-2025-01-12T14:28:46.643+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Starting PostServiceApplication using Java 21.0.1 with PID 23547 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
-2025-01-12T14:28:46.646+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-12T14:28:46.647+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-12T14:28:48.852+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Started PostServiceApplication in 2.612 seconds (process running for 2.917)
-2025-01-12T14:35:25.044+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Starting PostServiceApplication using Java 21.0.1 with PID 30009 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
-2025-01-12T14:35:25.045+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-12T14:35:25.045+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-12T14:35:27.259+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Started PostServiceApplication in 2.618 seconds (process running for 2.949)
-2025-01-12T14:35:52.544+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:35:52.544+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:35:52.665+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:35:52.828+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:35:58.659+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=1
-2025-01-12T14:36:00.031+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:01.059+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-12T14:36:01.107+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-12T14:36:02.414+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:03.045+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
-2025-01-12T14:36:09.519+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=2
-2025-01-12T14:36:10.613+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:11.476+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
-2025-01-12T14:36:12.254+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=2
-2025-01-12T14:36:12.296+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=2
-2025-01-12T14:36:15.626+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Updating post with ID=2
-2025-01-12T14:36:15.660+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Post with ID=2 updated successfully
-2025-01-12T14:36:17.682+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:20.932+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=3
-2025-01-12T14:36:22.269+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:23.537+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:36:23.579+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:36:33.794+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:34.915+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:36:34.971+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:36:35.704+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:43.142+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:45.413+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=1 with approval=true
-2025-01-12T14:36:45.416+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=1 marked as APPROVED
-2025-01-12T14:36:45.418+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Efe': Your post with ID 1 has been approved.
-2025-01-12T14:36:45.425+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=1 updated successfully after review event
-2025-01-12T14:36:45.433+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Efe'
-2025-01-12T14:36:45.445+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:46.229+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=2 with approval=true
-2025-01-12T14:36:46.233+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=2 marked as APPROVED
-2025-01-12T14:36:46.237+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Efe': Your post with ID 2 has been approved.
-2025-01-12T14:36:46.241+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=2 updated successfully after review event
-2025-01-12T14:36:46.255+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Efe'
-2025-01-12T14:36:46.269+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:51.360+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=3 with approval=false
-2025-01-12T14:36:51.364+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=3 marked as REJECTED
-2025-01-12T14:36:51.367+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Efe': Your post with ID 3 has been rejected.
-2025-01-12T14:36:51.372+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=3 updated successfully after review event
-2025-01-12T14:36:51.373+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Efe'
-2025-01-12T14:36:51.383+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:55.932+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:36:56.785+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching notifications for author 'Efe'
-2025-01-12T14:36:59.876+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-12T14:37:00.480+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:37:05.183+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Updating post with ID=3
-2025-01-12T14:37:05.211+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Post with ID=3 updated successfully
-2025-01-12T14:37:06.937+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:37:07.927+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:37:07.981+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:37:08.788+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:37:12.579+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:37:13.330+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:37:13.373+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:37:14.881+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Updating post with ID=3
-2025-01-12T14:37:14.893+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Post with ID=3 updated successfully
-2025-01-12T14:37:17.195+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:37:21.108+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:37:22.060+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=3 with approval=true
-2025-01-12T14:37:22.064+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=3 marked as APPROVED
-2025-01-12T14:37:22.068+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Efe': Your post with ID 3 has been approved.
-2025-01-12T14:37:22.075+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=3 updated successfully after review event
-2025-01-12T14:37:22.079+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Efe'
-2025-01-12T14:37:22.088+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:37:26.547+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:37:27.405+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-12T14:37:55.110+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:38:22.453+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:38:25.327+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=4
-2025-01-12T14:38:28.684+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:40:11.058+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:42:50.261+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:42:55.863+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:43:03.715+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=5
-2025-01-12T14:43:05.234+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:43:08.851+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-12T14:43:09.483+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
-2025-01-12T14:43:09.869+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:43:48.725+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:44:06.681+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:44:35.673+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:44:41.659+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching post with ID=3
-2025-01-12T14:44:42.166+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=4
-2025-01-12T14:44:42.588+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=4
-2025-01-12T14:44:45.969+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:44:47.605+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=5
-2025-01-12T14:44:48.257+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=4
-2025-01-12T14:44:48.301+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=4
-2025-01-12T14:44:55.660+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Updating post with ID=4
-2025-01-12T14:44:55.687+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Post with ID=4 updated successfully
-2025-01-12T14:44:57.377+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:44:58.986+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=5 with approval=true
-2025-01-12T14:44:58.989+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=5 marked as APPROVED
-2025-01-12T14:44:58.992+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Efe': Your post with ID 5 has been approved.
-2025-01-12T14:44:58.998+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=5 updated successfully after review event
-2025-01-12T14:44:58.999+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Efe'
-2025-01-12T14:44:59.006+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:45:00.857+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=5
-2025-01-12T14:45:03.475+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching notifications for author 'Dries'
-2025-01-12T14:45:05.891+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
-2025-01-12T14:45:06.715+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:45:07.367+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-12T14:45:07.894+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
-2025-01-12T14:45:08.412+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-12T14:54:17.302+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:54:26.705+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=4 with approval=true
-2025-01-12T14:54:26.709+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=4 marked as APPROVED
-2025-01-12T14:54:26.711+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Dries': Your post with ID 4 has been approved.
-2025-01-12T14:54:26.717+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=4 updated successfully after review event
-2025-01-12T14:54:26.718+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Dries'
-2025-01-12T14:54:26.731+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:54:28.642+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-12T14:54:29.610+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:54:43.482+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:54:46.014+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching post with ID=5
-2025-01-12T14:54:48.506+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:54:49.185+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=4
-2025-01-12T14:54:50.576+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:54:51.268+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=5
-2025-01-12T14:54:52.358+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:54:53.678+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-12T14:54:55.544+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:55:22.801+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:55:24.553+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-12T14:55:32.614+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
-2025-01-12T14:55:48.768+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-12T14:55:51.695+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=6
-2025-01-12T14:55:55.843+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:30:29.960+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Starting PostServiceApplication using Java 21.0.1 with PID 62511 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-15T01:30:29.964+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T01:30:29.964+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:30:32.186+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Started PostServiceApplication in 2.607 seconds (process running for 2.92)
+2025-01-15T01:31:28.285+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:29.064+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:32.019+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:32.296+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:38.150+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=1
+2025-01-15T01:31:39.256+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:45.794+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:53.860+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=1 with approval=false
+2025-01-15T01:31:53.864+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=1 marked as REJECTED
+2025-01-15T01:31:53.865+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Saving notification for author 'Koen': Your post with ID 1 has been rejected.
+2025-01-15T01:31:53.874+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=1 updated successfully after review event
+2025-01-15T01:31:53.879+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Koen'
+2025-01-15T01:31:53.892+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:31:55.442+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T01:31:57.946+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching notifications for author 'Thijs'
+2025-01-15T01:32:02.612+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:04.390+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:05.400+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T01:32:05.902+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T01:32:07.182+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
+2025-01-15T01:32:10.736+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Updating post with ID=1
+2025-01-15T01:32:10.759+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Post with ID=1 updated successfully
+2025-01-15T01:32:14.112+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:15.926+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching notifications for author 'Koen'
+2025-01-15T01:32:22.878+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:23.958+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=1 with approval=true
+2025-01-15T01:32:23.962+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=1 marked as APPROVED
+2025-01-15T01:32:23.967+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Koen': Your post with ID 1 has been approved.
+2025-01-15T01:32:23.968+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=1 updated successfully after review event
+2025-01-15T01:32:23.975+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Koen'
+2025-01-15T01:32:23.989+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:26.376+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T01:32:26.722+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T01:32:33.501+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Post created successfully with ID=2
+2025-01-15T01:32:34.796+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:35.377+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T01:32:36.013+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=2
+2025-01-15T01:32:36.055+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=2
+2025-01-15T01:32:36.761+0100 INFO               [http-nio-8081-exec-4]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:37.810+0100 INFO               [http-nio-8081-exec-5]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T01:32:38.384+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:38.764+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T01:32:39.139+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=2
+2025-01-15T01:32:39.195+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=2
+2025-01-15T01:32:42.213+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Updating post with ID=2
+2025-01-15T01:32:42.235+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Post with ID=2 updated successfully
+2025-01-15T01:32:44.774+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:46.682+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching notifications for author 'Thijs'
+2025-01-15T01:32:53.808+0100 INFO               [http-nio-8081-exec-3]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:32:56.838+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Received review event for postId=2 with approval=true
+2025-01-15T01:32:56.842+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=2 marked as APPROVED
+2025-01-15T01:32:56.846+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Thijs': Your post with ID 2 has been approved.
+2025-01-15T01:32:56.849+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.fullstackjava.service.PostService - Post with ID=2 updated successfully after review event
+2025-01-15T01:32:56.850+0100 INFO               [http-nio-8081-exec-6]         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Thijs'
+2025-01-15T01:32:56.861+0100 INFO               [http-nio-8081-exec-7]         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T01:33:03.216+0100 INFO               [http-nio-8081-exec-8]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
+2025-01-15T01:33:12.973+0100 INFO               [http-nio-8081-exec-9]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
+2025-01-15T01:33:28.236+0100 INFO               [http-nio-8081-exec-10]        be.pxl.fullstackjava.service.PostService - Fetching all approved posts
+2025-01-15T01:33:32.881+0100 INFO               [http-nio-8081-exec-1]         be.pxl.fullstackjava.service.PostService - Fetching all approved posts
+2025-01-15T01:33:33.477+0100 INFO               [http-nio-8081-exec-2]         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
+2025-01-15T01:59:11.887+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Starting PostServiceApplication using Java 21.0.1 with PID 89775 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-15T01:59:11.888+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T01:59:11.889+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:59:13.919+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Started PostServiceApplication in 2.396 seconds (process running for 2.677)
+2025-01-15T02:05:57.418+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Starting PostServiceApplication using Java 21.0.1 with PID 96322 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-15T02:05:57.419+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:05:57.420+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:05:59.753+0100 INFO               [main]                         be.pxl.fullstackjava.PostServiceApplication - Started PostServiceApplication in 2.71 seconds (process running for 3.008)

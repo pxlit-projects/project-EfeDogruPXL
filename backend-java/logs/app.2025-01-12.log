@@ -1,0 +1,78 @@
+2025-01-12T14:28:54.790+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - Starting CommentServiceApplication using Java 21.0.1 with PID 23716 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-12T14:28:54.792+0100 DEBUG              [main]                         be.pxl.fullstackjava.CommentServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-12T14:28:54.792+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T14:28:56.657+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - Started CommentServiceApplication in 2.256 seconds (process running for 2.554)
+2025-01-12T14:35:33.926+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - Starting CommentServiceApplication using Java 21.0.1 with PID 30053 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-12T14:35:33.927+0100 DEBUG              [main]                         be.pxl.fullstackjava.CommentServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-12T14:35:33.927+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T14:35:35.751+0100 INFO               [main]                         be.pxl.fullstackjava.CommentServiceApplication - Started CommentServiceApplication in 2.252 seconds (process running for 2.619)
+2025-01-12T14:37:27.516+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:27.580+0100 WARN               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-12T14:37:30.130+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:30.223+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:30.231+0100 INFO               [http-nio-8084-exec-3]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:31.551+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=1
+2025-01-12T14:37:31.573+0100 DEBUG              [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=1, comment=Nice!, author=Tom, postId=1, createdAt=2025-01-12T14:37:30.130970)
+2025-01-12T14:37:36.729+0100 INFO               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - Updating comment with id=1
+2025-01-12T14:37:36.756+0100 INFO               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - Comment with id=1 updated successfully
+2025-01-12T14:37:37.825+0100 INFO               [http-nio-8084-exec-6]         be.pxl.fullstackjava.service.CommentService - Comment with id=1 deleted successfully
+2025-01-12T14:37:37.839+0100 INFO               [http-nio-8084-exec-7]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:37.842+0100 WARN               [http-nio-8084-exec-7]         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-12T14:37:40.833+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:40.858+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:40.872+0100 INFO               [http-nio-8084-exec-9]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:41.138+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:41.145+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:41.152+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:42.764+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:42.776+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:42.787+0100 INFO               [http-nio-8084-exec-3]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:43.160+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:43.174+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:43.190+0100 INFO               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:43.311+0100 INFO               [http-nio-8084-exec-6]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:43.323+0100 INFO               [http-nio-8084-exec-6]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:43.337+0100 INFO               [http-nio-8084-exec-7]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:43.456+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:43.463+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:43.471+0100 INFO               [http-nio-8084-exec-9]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:43.587+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:43.594+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:43.603+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:45.512+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:45.525+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:45.539+0100 INFO               [http-nio-8084-exec-3]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:45.675+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Tom
+2025-01-12T14:37:45.687+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:37:45.704+0100 INFO               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:51.554+0100 INFO               [http-nio-8084-exec-6]         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
+2025-01-12T14:37:51.563+0100 INFO               [http-nio-8084-exec-7]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:51.968+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Comment with id=4 deleted successfully
+2025-01-12T14:37:51.976+0100 INFO               [http-nio-8084-exec-9]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:52.141+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Comment with id=5 deleted successfully
+2025-01-12T14:37:52.156+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:52.289+0100 INFO               [http-nio-8084-exec-2]         be.pxl.fullstackjava.service.CommentService - Comment with id=6 deleted successfully
+2025-01-12T14:37:52.299+0100 INFO               [http-nio-8084-exec-3]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:52.458+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Comment with id=7 deleted successfully
+2025-01-12T14:37:52.473+0100 INFO               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:52.628+0100 INFO               [http-nio-8084-exec-6]         be.pxl.fullstackjava.service.CommentService - Comment with id=8 deleted successfully
+2025-01-12T14:37:52.646+0100 INFO               [http-nio-8084-exec-7]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:52.777+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Comment with id=9 deleted successfully
+2025-01-12T14:37:52.792+0100 INFO               [http-nio-8084-exec-9]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:37:52.917+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Comment with id=10 deleted successfully
+2025-01-12T14:37:52.926+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:54:46.046+0100 INFO               [http-nio-8084-exec-3]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=5
+2025-01-12T14:54:46.071+0100 WARN               [http-nio-8084-exec-3]         be.pxl.fullstackjava.service.CommentService - No comments found for postId=5
+2025-01-12T14:54:49.187+0100 INFO               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=4
+2025-01-12T14:54:49.192+0100 WARN               [http-nio-8084-exec-4]         be.pxl.fullstackjava.service.CommentService - No comments found for postId=4
+2025-01-12T14:54:51.272+0100 INFO               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=5
+2025-01-12T14:54:51.275+0100 WARN               [http-nio-8084-exec-5]         be.pxl.fullstackjava.service.CommentService - No comments found for postId=5
+2025-01-12T14:54:53.678+0100 INFO               [http-nio-8084-exec-6]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:55:24.554+0100 INFO               [http-nio-8084-exec-7]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:55:27.570+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Efe
+2025-01-12T14:55:27.590+0100 INFO               [http-nio-8084-exec-8]         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-12T14:55:27.601+0100 INFO               [http-nio-8084-exec-9]         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-12T14:55:28.583+0100 INFO               [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Fetching comment by id=11
+2025-01-12T14:55:28.591+0100 DEBUG              [http-nio-8084-exec-10]        be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=11, comment=Test, author=Efe, postId=1, createdAt=2025-01-12T14:55:27.571131)
+2025-01-12T14:55:31.151+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Updating comment with id=11
+2025-01-12T14:55:31.173+0100 INFO               [http-nio-8084-exec-1]         be.pxl.fullstackjava.service.CommentService - Comment with id=11 updated successfully

@@ -1,53 +1,42 @@
-2025-01-12T14:28:50.716+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.1 with PID 23557 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
-2025-01-12T14:28:50.718+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-12T14:28:50.719+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-12T14:28:52.589+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Started ReviewServiceApplication in 2.267 seconds (process running for 2.588)
-2025-01-12T14:35:30.082+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.1 with PID 30050 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
-2025-01-12T14:35:30.083+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-12T14:35:30.083+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-12T14:35:32.046+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Started ReviewServiceApplication in 2.337 seconds (process running for 2.629)
-2025-01-12T14:36:45.176+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Dries
-2025-01-12T14:36:45.336+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
-2025-01-12T14:36:45.405+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
-2025-01-12T14:36:45.405+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
-2025-01-12T14:36:45.434+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Efe' for postId=1
-2025-01-12T14:36:45.434+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Dries, role=editor for postId=1
-2025-01-12T14:36:46.199+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=2 by author=Dries
-2025-01-12T14:36:46.226+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=2
-2025-01-12T14:36:46.227+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=2, isApproved=true)
-2025-01-12T14:36:46.227+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=2
-2025-01-12T14:36:46.256+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Efe' for postId=2
-2025-01-12T14:36:46.256+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Dries, role=editor for postId=2
-2025-01-12T14:36:51.328+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=3 by author=Dries
-2025-01-12T14:36:51.357+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=3
-2025-01-12T14:36:51.358+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=3, isApproved=false)
-2025-01-12T14:36:51.358+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=3
-2025-01-12T14:36:51.373+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Efe' for postId=3
-2025-01-12T14:36:51.373+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Dries, role=editor for postId=3
-2025-01-12T14:36:59.904+0100 INFO               [http-nio-8082-exec-4]         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=3, returning response
-2025-01-12T14:36:59.905+0100 INFO               [http-nio-8082-exec-4]         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=3
-2025-01-12T14:36:59.917+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.fullstackjava.service.ReviewService - Review found for postId=3: Review(id=3, content=Where is content ?, author=Dries, postId=3, createdAt=2025-01-12T14:36:51.345230, isApproved=false)
-2025-01-12T14:37:00.427+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=3, returning response
-2025-01-12T14:37:00.427+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=3
-2025-01-12T14:37:00.435+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Review found for postId=3: Review(id=3, content=Where is content ?, author=Dries, postId=3, createdAt=2025-01-12T14:36:51.345230, isApproved=false)
-2025-01-12T14:37:22.013+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=3 by author=Dries
-2025-01-12T14:37:22.030+0100 WARN               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Review already exists for postId=3
-2025-01-12T14:37:22.030+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=3
-2025-01-12T14:37:22.049+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=3
-2025-01-12T14:37:22.057+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=3
-2025-01-12T14:37:22.058+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=3, isApproved=true)
-2025-01-12T14:37:22.058+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=3
-2025-01-12T14:37:22.079+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Efe' for postId=3
-2025-01-12T14:37:22.079+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Dries, role=editor for postId=3
-2025-01-12T14:44:58.940+0100 INFO               [http-nio-8082-exec-8]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=5 by author=Dries
-2025-01-12T14:44:58.980+0100 INFO               [http-nio-8082-exec-8]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=5
-2025-01-12T14:44:58.981+0100 INFO               [http-nio-8082-exec-8]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=5, isApproved=true)
-2025-01-12T14:44:58.982+0100 INFO               [http-nio-8082-exec-8]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=5
-2025-01-12T14:44:58.999+0100 INFO               [http-nio-8082-exec-8]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Efe' for postId=5
-2025-01-12T14:44:58.999+0100 INFO               [http-nio-8082-exec-8]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Dries, role=editor for postId=5
-2025-01-12T14:54:26.662+0100 INFO               [http-nio-8082-exec-10]        be.pxl.fullstackjava.service.ReviewService - Creating review for postId=4 by author=Efe
-2025-01-12T14:54:26.700+0100 INFO               [http-nio-8082-exec-10]        be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=4
-2025-01-12T14:54:26.701+0100 INFO               [http-nio-8082-exec-10]        be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=4, isApproved=true)
-2025-01-12T14:54:26.701+0100 INFO               [http-nio-8082-exec-10]        be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=4
-2025-01-12T14:54:26.719+0100 INFO               [http-nio-8082-exec-10]        be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Dries' for postId=4
-2025-01-12T14:54:26.719+0100 INFO               [http-nio-8082-exec-10]        be.pxl.fullstackjava.controller.ReviewController - Review created by user=Efe, role=editor for postId=4
+2025-01-15T01:30:34.152+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.1 with PID 62671 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-15T01:30:34.155+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T01:30:34.155+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:30:36.092+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Started ReviewServiceApplication in 2.334 seconds (process running for 2.627)
+2025-01-15T01:31:53.662+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Thijs
+2025-01-15T01:31:53.809+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-15T01:31:53.853+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=false)
+2025-01-15T01:31:53.853+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-15T01:31:53.879+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Koen' for postId=1
+2025-01-15T01:31:53.879+0100 INFO               [http-nio-8082-exec-1]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Thijs, role=editor for postId=1
+2025-01-15T01:31:55.461+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=1, returning response
+2025-01-15T01:31:55.462+0100 INFO               [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-15T01:31:55.469+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Bad, author=Thijs, postId=1, createdAt=2025-01-15T01:31:53.777531, isApproved=false)
+2025-01-15T01:32:05.932+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=1, returning response
+2025-01-15T01:32:05.934+0100 INFO               [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-15T01:32:05.954+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Bad, author=Thijs, postId=1, createdAt=2025-01-15T01:31:53.777531, isApproved=false)
+2025-01-15T01:32:07.133+0100 INFO               [http-nio-8082-exec-4]         be.pxl.fullstackjava.controller.ReviewController - Review found for postId=1, returning response
+2025-01-15T01:32:07.134+0100 INFO               [http-nio-8082-exec-4]         be.pxl.fullstackjava.service.ReviewService - Fetching review for postId=1
+2025-01-15T01:32:07.142+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.fullstackjava.service.ReviewService - Review found for postId=1: Review(id=1, content=Bad, author=Thijs, postId=1, createdAt=2025-01-15T01:31:53.777531, isApproved=false)
+2025-01-15T01:32:23.897+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=1 by author=Thijs
+2025-01-15T01:32:23.917+0100 WARN               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Review already exists for postId=1
+2025-01-15T01:32:23.918+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Deleting review for postId=1
+2025-01-15T01:32:23.940+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Review deleted successfully for postId=1
+2025-01-15T01:32:23.954+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=1
+2025-01-15T01:32:23.955+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=1, isApproved=true)
+2025-01-15T01:32:23.955+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=1
+2025-01-15T01:32:23.976+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Koen' for postId=1
+2025-01-15T01:32:23.976+0100 INFO               [http-nio-8082-exec-5]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Thijs, role=editor for postId=1
+2025-01-15T01:32:56.801+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Creating review for postId=2 by author=Koen
+2025-01-15T01:32:56.834+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Review saved successfully for postId=2
+2025-01-15T01:32:56.835+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Review event sent to queue: ReviewEvent(postId=2, isApproved=true)
+2025-01-15T01:32:56.835+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Sending notification for postId=2
+2025-01-15T01:32:56.850+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.service.ReviewService - Notification sent to author 'Thijs' for postId=2
+2025-01-15T01:32:56.851+0100 INFO               [http-nio-8082-exec-6]         be.pxl.fullstackjava.controller.ReviewController - Review created by user=Koen, role=editor for postId=2
+2025-01-15T01:59:16.004+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.1 with PID 89933 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-15T01:59:16.004+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T01:59:16.005+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T01:59:17.813+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Started ReviewServiceApplication in 2.226 seconds (process running for 2.515)
+2025-01-15T02:06:02.441+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.1 with PID 96486 (/Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/review-service/target/classes started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java)
+2025-01-15T02:06:02.443+0100 DEBUG              [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:06:02.444+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:06:04.864+0100 INFO               [main]                         be.pxl.fullstackjava.ReviewServiceApplication - Started ReviewServiceApplication in 2.903 seconds (process running for 3.288)

@@ -42,7 +42,7 @@ public class PostService implements IPostService{
                 .build();
         postRepository.save(post);
         log.info("Post created successfully with ID={}", post.getId());
-        rabbitTemplate.convertAndSend("post-queue", post.getId());
+//        rabbitTemplate.convertAndSend("post-queue", post.getId());
     }
 
     public void updatePost(Long id, PostRequest updatePostRequest) {

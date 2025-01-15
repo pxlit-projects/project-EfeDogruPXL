@@ -1,40 +1,56 @@
-2025-01-09T18:31:28.658+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 50568 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
-2025-01-09T18:31:28.672+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T18:31:28.672+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T18:31:32.456+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 4.814 seconds (process running for 32.273)
-2025-01-09T18:32:28.877+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 51887 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
-2025-01-09T18:32:28.879+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T18:32:28.880+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T18:32:31.661+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.409 seconds (process running for 15.794)
-2025-01-09T18:32:31.838+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
-2025-01-09T18:32:31.865+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
-2025-01-09T18:32:31.986+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
-2025-01-09T18:32:32.045+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
-2025-01-09T18:32:32.313+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=4
-2025-01-09T18:32:32.331+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=4 updated successfully
-2025-01-09T18:32:32.349+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
-2025-01-09T18:32:32.355+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
-2025-01-09T18:32:32.376+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=6
-2025-01-09T18:32:32.380+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=6, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-09T18:32:32.371584)
-2025-01-09T19:41:04.002+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 15153 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
-2025-01-09T19:41:04.003+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:41:04.004+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:41:06.758+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.397 seconds (process running for 15.678)
-2025-01-09T19:43:16.917+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 17282 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
-2025-01-09T19:43:16.917+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:43:16.918+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:43:19.782+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.534 seconds (process running for 16.161)
-2025-01-09T19:44:18.643+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 18293 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
-2025-01-09T19:44:18.644+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:44:18.644+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:44:21.359+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.326 seconds (process running for 15.859)
-2025-01-09T19:44:21.543+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
-2025-01-09T19:44:21.572+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
-2025-01-09T19:44:21.699+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
-2025-01-09T19:44:21.761+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
-2025-01-09T19:44:21.992+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=4
-2025-01-09T19:44:22.020+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=4 updated successfully
-2025-01-09T19:44:22.041+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
-2025-01-09T19:44:22.047+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
-2025-01-09T19:44:22.071+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=6
-2025-01-09T19:44:22.076+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=6, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-09T19:44:22.065287)
+2025-01-15T02:00:13.341+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 90448 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
+2025-01-15T02:00:13.346+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:00:13.346+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:00:16.095+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.38 seconds (process running for 29.152)
+2025-01-15T02:00:16.287+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:00:16.321+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-15T02:00:16.459+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:00:16.512+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
+2025-01-15T02:00:16.773+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=4
+2025-01-15T02:00:16.799+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=4 updated successfully
+2025-01-15T02:00:16.823+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
+2025-01-15T02:00:16.827+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-15T02:00:16.844+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=6
+2025-01-15T02:00:16.847+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=6, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-15T02:00:16.840447)
+2025-01-15T02:10:08.038+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 425 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
+2025-01-15T02:10:08.039+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:10:08.040+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:10:10.917+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.576 seconds (process running for 16.587)
+2025-01-15T02:10:11.123+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:10:11.154+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-15T02:10:11.283+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:10:11.358+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
+2025-01-15T02:10:11.608+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=4
+2025-01-15T02:10:11.630+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=4 updated successfully
+2025-01-15T02:10:11.656+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
+2025-01-15T02:10:11.669+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-15T02:10:11.687+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=6
+2025-01-15T02:10:11.691+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=6, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-15T02:10:11.683599)
+2025-01-15T02:23:21.876+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 13456 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
+2025-01-15T02:23:21.877+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:23:21.878+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:23:24.706+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.482 seconds (process running for 16.309)
+2025-01-15T02:23:24.873+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:23:24.901+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-15T02:23:25.016+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:23:25.081+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=3 deleted successfully
+2025-01-15T02:23:25.336+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=4
+2025-01-15T02:23:25.356+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=4 updated successfully
+2025-01-15T02:23:25.374+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
+2025-01-15T02:23:25.379+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-15T02:23:25.403+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=6
+2025-01-15T02:23:25.409+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=6, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-15T02:23:25.398708)
+2025-01-15T02:36:24.055+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Starting CommentControllerTests using Java 21.0.1 with PID 20344 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/comment-service)
+2025-01-15T02:36:24.056+0100 DEBUG              [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:36:24.057+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:36:26.962+0100 INFO               [main]                         be.pxl.fullstackjava.controller.CommentControllerTests - Started CommentControllerTests in 3.568 seconds (process running for 16.442)
+2025-01-15T02:36:27.194+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:36:27.226+0100 WARN               [main]                         be.pxl.fullstackjava.service.CommentService - No comments found for postId=1
+2025-01-15T02:36:27.353+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comments for postId=1
+2025-01-15T02:36:27.388+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=5 deleted successfully
+2025-01-15T02:36:27.671+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Updating comment with id=6
+2025-01-15T02:36:27.691+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Comment with id=6 updated successfully
+2025-01-15T02:36:27.713+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Creating comment for postId=1 by author=Jane Doe
+2025-01-15T02:36:27.719+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Sent comment event to queue for postId=1
+2025-01-15T02:36:27.771+0100 INFO               [main]                         be.pxl.fullstackjava.service.CommentService - Fetching comment by id=9
+2025-01-15T02:36:27.774+0100 DEBUG              [main]                         be.pxl.fullstackjava.service.CommentService - Comment found: Comment(id=9, comment=Comment 1, author=Jane Doe, postId=1, createdAt=2025-01-15T02:36:27.766807)

@@ -89,6 +89,8 @@ public class CommentControllerTests {
         verify(rabbitTemplate, times(1)).convertAndSend(Mockito.eq("comment-queue"), Mockito.eq(1L));
     }
 
+
+
     @Test
     public void testGetCommentByPostId_NoCommentsFound() throws Exception {
         mockMvc.perform(get("/api/comment/post/1")
@@ -190,5 +192,94 @@ public class CommentControllerTests {
 
         assertEquals(0, commentRepository.count());
     }
+
+    @Test
+    public void testCreateComment_AccessDeniedForInvalidRole() throws Exception {
+        CommentRequest request = CommentRequest.builder()
+                .author("Jane Doe")
+                .comment("This is a test comment")
+                .build();
+
+        String requestJson = objectMapper.writeValueAsString(request);
+
+        mockMvc.perform(post("/api/comment/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .header("name", "TestUser")
+                        .header("role", "admin") // Invalid role
+                        .content(requestJson))
+                .andExpect(status().isForbidden())
+                .andExpect(jsonPath("$").value("Access denied for role: admin for user: TestUser"));
+    }
+
+    @Test
+    public void testGetCommentByPostId_AccessDeniedForInvalidRole() throws Exception {
+        mockMvc.perform(get("/api/comment/post/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .header("name", "TestUser")
+                        .header("role", "admin")) // Invalid role
+                .andExpect(status().isForbidden())
+                .andExpect(jsonPath("$").value("Access denied for role: admin for user: TestUser"));
+    }
+
+    @Test
+    public void testGetCommentById_AccessDeniedForInvalidRole() throws Exception {
+        Comment comment = Comment.builder()
+                .postId(1L)
+                .comment("Comment 1")
+                .author("Jane Doe")
+                .createdAt(LocalDateTime.now())
+                .build();
+
+        Comment savedComment = commentRepository.save(comment);
+
+        mockMvc.perform(get("/api/comment/" + savedComment.getId())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .header("name", "TestUser")
+                        .header("role", "moderator")) // Invalid role
+                .andExpect(status().isForbidden())
+                .andExpect(jsonPath("$").value("Access denied for role: moderator for user: TestUser"));
+    }
+
+    @Test
+    public void testUpdateComment_AccessDeniedForInvalidRole() throws Exception {
+        Comment comment = Comment.builder()
+                .postId(1L)
+                .comment("Old Comment")
+                .author("Jane Doe")
+                .createdAt(LocalDateTime.now())
+                .build();
+
+        Comment savedComment = commentRepository.save(comment);
+
+        String updatedText = "Updated Comment";
+
+        mockMvc.perform(put("/api/comment/" + savedComment.getId())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .header("name", "TestUser")
+                        .header("role", "guest") // Invalid role
+                        .content(updatedText))
+                .andExpect(status().isForbidden())
+                .andExpect(jsonPath("$").value("Access denied for role: guest for user: TestUser"));
+    }
+
+    @Test
+    public void testDeleteComment_AccessDeniedForInvalidRole() throws Exception {
+        Comment comment = Comment.builder()
+                .postId(1L)
+                .comment("Comment to delete")
+                .author("Jane Doe")
+                .createdAt(LocalDateTime.now())
+                .build();
+
+        Comment savedComment = commentRepository.save(comment);
+
+        mockMvc.perform(delete("/api/comment/" + savedComment.getId())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .header("name", "TestUser")
+                        .header("role", "admin")) // Invalid role
+                .andExpect(status().isForbidden())
+                .andExpect(jsonPath("$").value("Access denied for role: admin for user: TestUser"));
+    }
+
 
 }

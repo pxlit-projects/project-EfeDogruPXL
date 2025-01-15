@@ -1,42 +1,36 @@
-2025-01-09T19:40:29.545+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 14640 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
-2025-01-09T19:40:29.563+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:40:29.564+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:40:32.710+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 3.811 seconds (process running for 15.687)
-2025-01-09T19:40:33.458+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
-2025-01-09T19:40:33.465+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
-2025-01-09T19:47:10.361+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 20996 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
-2025-01-09T19:47:10.361+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:47:10.362+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:47:13.657+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 3.964 seconds (process running for 15.778)
-2025-01-09T19:47:14.199+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-09T19:47:14.334+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-09T19:47:14.377+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-09T19:47:14.402+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
-2025-01-09T19:47:14.408+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
-2025-01-09T19:55:21.735+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 29169 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
-2025-01-09T19:55:21.736+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:55:21.736+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:55:24.916+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 3.848 seconds (process running for 14.883)
-2025-01-09T19:55:25.464+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-09T19:55:25.583+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-09T19:55:25.608+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-09T19:55:25.633+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-09T19:55:25.654+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-09T19:55:25.691+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-09T19:55:25.705+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Updating post with ID=1
-2025-01-09T19:55:25.711+0100 ERROR              [main]                         be.pxl.fullstackjava.service.PostService - Post not found for ID=1
-2025-01-09T19:55:25.722+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
-2025-01-09T19:55:25.730+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
-2025-01-09T19:55:25.991+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
-2025-01-09T19:56:17.896+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 30013 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
-2025-01-09T19:56:17.897+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T19:56:17.897+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T19:56:21.189+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 3.95 seconds (process running for 15.62)
-2025-01-09T19:56:21.736+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
-2025-01-09T19:56:21.872+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-09T19:56:21.899+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
-2025-01-09T19:56:21.926+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-09T19:56:21.966+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
-2025-01-09T19:56:21.981+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
-2025-01-09T19:56:21.989+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
-2025-01-09T19:56:22.247+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T02:00:48.901+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 91169 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
+2025-01-15T02:00:48.904+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:00:48.905+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:00:52.255+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 4.018 seconds (process running for 15.572)
+2025-01-15T02:00:52.856+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
+2025-01-15T02:00:52.994+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T02:00:53.025+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T02:00:53.057+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T02:00:53.096+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T02:00:53.109+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
+2025-01-15T02:00:53.120+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
+2025-01-15T02:00:53.377+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T02:09:21.842+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 99440 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
+2025-01-15T02:09:21.843+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:09:21.843+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:09:25.199+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 4.689 seconds (process running for 17.299)
+2025-01-15T02:09:25.748+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
+2025-01-15T02:09:25.874+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T02:09:25.911+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T02:09:25.944+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T02:09:25.999+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T02:09:26.016+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
+2025-01-15T02:09:26.030+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
+2025-01-15T02:09:26.276+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
+2025-01-15T02:21:51.362+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Starting PostTests using Java 21.0.1 with PID 12101 (started by efedogru in /Users/efedogru/Desktop/project-EfeDogruPXL/backend-java/post-service)
+2025-01-15T02:21:51.363+0100 DEBUG              [main]                         be.pxl.fullstackjava.PostTests - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-15T02:21:51.364+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15T02:21:54.540+0100 INFO               [main]                         be.pxl.fullstackjava.PostTests - Started PostTests in 3.852 seconds (process running for 16.187)
+2025-01-15T02:21:55.105+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching post with ID=1
+2025-01-15T02:21:55.237+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T02:21:55.271+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all rejected posts
+2025-01-15T02:21:55.299+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T02:21:55.335+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all approved and pending posts
+2025-01-15T02:21:55.349+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Saving notification for author 'Jane Doe': This is a notification message.
+2025-01-15T02:21:55.359+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Notification saved successfully for author 'Jane Doe'
+2025-01-15T02:21:55.601+0100 INFO               [main]                         be.pxl.fullstackjava.service.PostService - Fetching all drafted posts
